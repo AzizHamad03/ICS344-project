@@ -17,12 +17,7 @@
 - **Attacker Machine**: Kali Linux  
   - IP Address: `192.168.0.242`
 
-### 🔧 Commands to prepare the attacker (Kali) machine:
-```bash
-sudo apt update && sudo apt upgrade -y
-sudo apt install metasploit-framework -y
-sudo msfconsole
-```
+
 
 <p align="center">
   <img src="./phase1Screenshots/victim_ip.png" width="400"/>
@@ -44,7 +39,18 @@ sudo msfconsole
   <br><em>Attacker pinging victim</em>
 </p>
 
+### 🔧 Commands to prepare the attacker (Kali) machine:
+```bash
+sudo apt update && sudo apt upgrade -y
+sudo apt install metasploit-framework -y
+sudo msfconsole
+```
 ---
+
+<p align="center">
+  <img src="./phase1Screenshots/msfconsole_loaded.png" width="400"/>
+  <br><em>Metasploit Console Launched</em>
+</p>
 
 ## 🎯 Targeted Service
 
@@ -76,36 +82,30 @@ set STOP_ON_SUCCESS true
 run
 ```
 
-<p align="center">
-  <img src="./phase1Screenshots/msfconsole_loaded.png" width="400"/>
-</p>
 
 <p align="center">
   <img src="./phase1Screenshots/msf_bruteforce_run.png" width="500"/>
-</p>
-
-<p align="center">
-  <img src="./phase1Screenshots/msf_success_login.png" width="500"/>
+  <br><em>Metasploit Bruteforce Running with Wordlists</em>
 </p>
 
 <p align="center">
   <img src="./phase1Screenshots/msf_success2_login.png" width="500"/>
-</p>
-
-<p align="center">
-  <img src="./phase1Screenshots/msf_success_login_2.png" width="500"/>
+  <br><em>Credential Success with vagrant:vagrant (Clear Highlight)</em>
 </p>
 
 <p align="center">
   <img src="./phase1Screenshots/msf_interaction_session.png" width="500"/>
+  <br><em>Interacting with Session: Running whoami and ls</em>
 </p>
 
 <p align="center">
   <img src="./phase1Screenshots/manual_ssh_login.png" width="400"/>
+  <br><em>Manual SSH Login from Kali to Metasploitable</em>
 </p>
 
 <p align="center">
   <img src="./phase1Screenshots/whoami_after_login.png" width="300"/>
+  <br><em>Manual Command Output: whoami confirms access</em>
 </p>
 
 ---
@@ -121,12 +121,12 @@ We developed a **Python script** using `paramiko` to automate the login process.
 
 <p align="center">
   <img src="./phase1Screenshots/python_script_code.png" width="500"/>
-  <br><em>Python script used to exploit SSH</em>
+  <br><em>Python Script to Connect & Run whoami via Paramiko</em>
 </p>
 
 <p align="center">
   <img src="./phase1Screenshots/python_script_output.png" width="400"/>
-  <br><em>Script output: Access verified</em>
+  <br><em>Script Output: Successfully Logged In as vagrant</em>
 </p>
 
 ---
