@@ -25,22 +25,22 @@ sudo msfconsole
 ```
 
 <p align="center">
-  <img src="./screenshots/victim_ip.png" alt="Victim IP" width="400"/>
+  <img src="./phase1Screenshots/victim_ip.png" width="400"/>
   <br><em>Victim IP Configuration</em>
 </p>
 
 <p align="center">
-  <img src="./screenshots/attacker_ip.png" alt="Attacker IP" width="400"/>
+  <img src="./phase1Screenshots/attacker_ip.png" width="400"/>
   <br><em>Attacker IP Configuration</em>
 </p>
 
 <p align="center">
-  <img src="./screenshots/ping_victim_to_attacker.png" alt="Ping victim to attacker" width="400"/>
+  <img src="./phase1Screenshots/ping_victim_to_attacker.png" width="400"/>
   <br><em>Victim pinging attacker</em>
 </p>
 
 <p align="center">
-  <img src="./screenshots/ping_attacker_to_victim.png" alt="Ping attacker to victim" width="400"/>
+  <img src="./phase1Screenshots/ping_attacker_to_victim.png" width="400"/>
   <br><em>Attacker pinging victim</em>
 </p>
 
@@ -51,12 +51,12 @@ sudo msfconsole
 We scanned the victim using **Nmap** and confirmed that the **SSH** service (port `22`) was active and accessible.
 
 <p align="center">
-  <img src="./screenshots/nmap_scan_full.png" alt="Nmap Full Scan" width="500"/>
+  <img src="./phase1Screenshots/nmap_scan_full.png" width="500"/>
   <br><em>Nmap full scan results</em>
 </p>
 
 <p align="center">
-  <img src="./screenshots/nmap_scan_ssh_only.png" alt="Nmap SSH Only" width="500"/>
+  <img src="./phase1Screenshots/nmap_scan_ssh_only.png" width="500"/>
   <br><em>Nmap focused SSH scan</em>
 </p>
 
@@ -77,27 +77,35 @@ run
 ```
 
 <p align="center">
-  <img src="./screenshots/msfconsole_loaded.png" alt="Launching Metasploit" width="400"/>
+  <img src="./phase1Screenshots/msfconsole_loaded.png" width="400"/>
 </p>
 
 <p align="center">
-  <img src="./screenshots/msf_bruteforce_run.png" alt="Bruteforce Running" width="500"/>
+  <img src="./phase1Screenshots/msf_bruteforce_run.png" width="500"/>
 </p>
 
 <p align="center">
-  <img src="./screenshots/msf_success_login.png" alt="Bruteforce Success" width="500"/>
+  <img src="./phase1Screenshots/msf_success_login.png" width="500"/>
 </p>
 
 <p align="center">
-  <img src="./screenshots/msf_interaction_session.png" alt="Metasploit session" width="500"/>
+  <img src="./phase1Screenshots/msf_success2_login.png" width="500"/>
 </p>
 
 <p align="center">
-  <img src="./screenshots/manual_ssh_login.png" alt="Manual SSH login" width="400"/>
+  <img src="./phase1Screenshots/msf_success_login_2.png" width="500"/>
 </p>
 
 <p align="center">
-  <img src="./screenshots/whoami_after_login.png" alt="Manual whoami output" width="300"/>
+  <img src="./phase1Screenshots/msf_interaction_session.png" width="500"/>
+</p>
+
+<p align="center">
+  <img src="./phase1Screenshots/manual_ssh_login.png" width="400"/>
+</p>
+
+<p align="center">
+  <img src="./phase1Screenshots/whoami_after_login.png" width="300"/>
 </p>
 
 ---
@@ -112,42 +120,14 @@ We developed a **Python script** using `paramiko` to automate the login process.
 - Prints the output as proof of access
 
 <p align="center">
-  <img src="./custom-script/python_script_code.png" alt="Python script" width="500"/>
+  <img src="./phase1Screenshots/python_script_code.png" width="500"/>
   <br><em>Python script used to exploit SSH</em>
 </p>
 
 <p align="center">
-  <img src="./custom-script/python_script_output.png" alt="Script output" width="400"/>
+  <img src="./phase1Screenshots/python_script_output.png" width="400"/>
   <br><em>Script output: Access verified</em>
 </p>
-
----
-
-## 📂 Folder Structure
-
-```
-phase1/
-├── README.md
-├── custom-script/
-│   ├── ssh_bruteforce.py
-│   ├── python_script_code.png
-│   └── python_script_output.png
-├── screenshots/
-│   ├── victim_ip.png
-│   ├── attacker_ip.png
-│   ├── ping_victim_to_attacker.png
-│   ├── ping_attacker_to_victim.png
-│   ├── nmap_scan_full.png
-│   ├── nmap_scan_ssh_only.png
-│   ├── msfconsole_loaded.png
-│   ├── msf_bruteforce_run.png
-│   ├── msf_success_login.png
-│   ├── msf_interaction_session.png
-│   ├── manual_ssh_login.png
-│   └── whoami_after_login.png
-├── report/
-│   └── Project_Report_Phase1.pdf
-```
 
 ---
 
