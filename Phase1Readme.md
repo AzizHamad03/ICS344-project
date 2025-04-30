@@ -17,8 +17,6 @@
 - **Attacker Machine**: Kali Linux  
   - IP Address: `192.168.0.242`
 
-
-
 <p align="center">
   <img src="./phase1Screenshots/victim_ip.png" width="400"/>
   <br><em>Victim IP Configuration</em>
@@ -45,6 +43,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install metasploit-framework -y
 sudo msfconsole
 ```
+
 ---
 
 <p align="center">
@@ -82,7 +81,6 @@ set STOP_ON_SUCCESS true
 run
 ```
 
-
 <p align="center">
   <img src="./phase1Screenshots/msf_bruteforce_run.png" width="500"/>
   <br><em>Metasploit Bruteforce Running with Wordlists</em>
@@ -100,7 +98,7 @@ run
 
 <p align="center">
   <img src="./phase1Screenshots/manual_ssh_login.png" width="400"/>
-  <br><em>Manual SSH Login from Kali to Metasploitable</em>
+  <br><em>Manual SSH Login from Kali to Metasploitable using vagrant:vagrant</em>
 </p>
 
 <p align="center">
