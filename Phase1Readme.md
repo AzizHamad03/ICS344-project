@@ -129,6 +129,18 @@ We developed a **Python script** using `paramiko` to automate the login process.
 
 ---
 
+### 📁 Wordlists and Custom Script
+
+We used the following files in our brute-force and scripting tasks:
+
+- `usernames`: A list of potential usernames for SSH login
+- `passwords`: A list of potential passwords
+- `ssh_login.py`: A Python script using Paramiko to automate SSH login and run `whoami`
+
+These files are included in phase 1 of this repository. 
+
+---
+
 ## 🧠 Ethical Note
 
 > ⚠️ This project was performed in a **legal, isolated environment** using Metasploitable3.  
